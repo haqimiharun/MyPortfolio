@@ -1,6 +1,9 @@
 import { GoogleGenAI } from "@google/genai";
 import { profile, experience, projects, skills, education, certifications } from '../data';
 
+// Polyfill for process to avoid TypeScript errors in the browser build
+declare const process: any;
+
 // Construct a context string from the data to feed into the AI
 const contextData = JSON.stringify({
   profile,
@@ -28,6 +31,7 @@ Rules:
 
 export const sendMessageToGemini = async (userMessage: string): Promise<string> => {
   try {
+    // Note: API_KEY is injected by Vite's define plugin during build
     if (!process.env.API_KEY) {
       return "Error: API Key is missing in the environment variables.";
     }

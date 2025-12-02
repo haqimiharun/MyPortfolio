@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { projects } from '../data';
-import { GithubIcon, ExternalLinkIcon, CodeIcon } from './Icons';
+import { GithubIcon, ExternalLinkIcon } from './Icons';
 
 const Portfolio: React.FC = () => {
   return (

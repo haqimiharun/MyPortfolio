@@ -78,8 +78,13 @@ const ChatWidget: React.FC = () => {
             {messages.map((msg) => (
               <div 
                 key={msg.id} 
-                className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+                className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start gap-2'}`}
               >
+                {msg.role === 'model' && (
+                  <div className="w-8 h-8 rounded-full bg-emerald-900/50 flex items-center justify-center border border-emerald-500/30 flex-shrink-0 mt-1">
+                    <BotIcon className="w-4 h-4 text-emerald-400" />
+                  </div>
+                )}
                 <div 
                   className={`max-w-[80%] p-3 rounded-2xl text-sm leading-relaxed ${
                     msg.role === 'user' 
@@ -92,8 +97,11 @@ const ChatWidget: React.FC = () => {
               </div>
             ))}
             {isTyping && (
-              <div className="flex justify-start">
-                <div className="bg-slate-800 p-3 rounded-2xl rounded-bl-none border border-slate-700 flex gap-1">
+              <div className="flex justify-start gap-2">
+                 <div className="w-8 h-8 rounded-full bg-emerald-900/50 flex items-center justify-center border border-emerald-500/30 flex-shrink-0 mt-1">
+                    <BotIcon className="w-4 h-4 text-emerald-400" />
+                  </div>
+                <div className="bg-slate-800 p-3 rounded-2xl rounded-bl-none border border-slate-700 flex gap-1 items-center h-[44px]">
                   <span className="w-2 h-2 bg-slate-500 rounded-full animate-bounce"></span>
                   <span className="w-2 h-2 bg-slate-500 rounded-full animate-bounce delay-100"></span>
                   <span className="w-2 h-2 bg-slate-500 rounded-full animate-bounce delay-200"></span>
