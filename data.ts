@@ -1,4 +1,3 @@
-
 import { Job, Profile, Project, SkillCategory, Education, Certification } from './types';
 
 export const profile: Profile = {
@@ -11,7 +10,7 @@ export const profile: Profile = {
   linkedin: "linkedin.com/in/haqimiharun15",
   location: "Kuala Lumpur, Malaysia",
   phone: "+60179819856",
-  resumeUrl: "/resume.pdf"
+  resumeUrl: "resume.pdf"
 };
 
 export const experience: Job[] = [
