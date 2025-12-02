@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
     plugins: [react()],
-    base: './', // Ensures assets load correctly on GitHub Pages (relative paths)
+    base: 'MyPortfolio', // Ensures assets load correctly on GitHub Pages (relative paths)
     define: {
       // Polyfill process.env for the geminiService
       'process.env.API_KEY': JSON.stringify(env.API_KEY) 
