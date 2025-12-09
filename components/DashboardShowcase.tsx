@@ -1,8 +1,13 @@
 
 import React from 'react';
 import { showcaseItems } from '../data';
+import { ExternalLinkIcon } from './Icons';
 
-const DashboardShowcase: React.FC = () => {
+interface DashboardShowcaseProps {
+  onViewItem: (id: string) => void;
+}
+
+const DashboardShowcase: React.FC<DashboardShowcaseProps> = ({ onViewItem }) => {
   return (
     <section id="gallery" className="py-24 bg-slate-950 relative">
        {/* Background decorative elements */}
@@ -16,23 +21,34 @@ const DashboardShowcase: React.FC = () => {
                     Operational Dashboards
                 </h2>
                 <p className="text-slate-400 max-w-xl">
-                    A visual tour of the infrastructure I build and maintain, from CI/CD pipelines to real-time monitoring systems.
+                    A visual tour of the infrastructure I build and maintain. Click on any project to view the full gallery and details.
                 </p>
             </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {showcaseItems.map((item) => (
-            <div key={item.id} className="group bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/10">
+            <div 
+              key={item.id} 
+              onClick={() => onViewItem(item.id)}
+              className="group bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/10 cursor-pointer"
+            >
               {/* Image Container */}
               <div className="h-56 overflow-hidden relative bg-slate-950">
                 <img 
-                  src={item.imageUrl} 
+                  src={item.images[0]} 
                   alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80"></div>
                 
+                {/* Overlay Icon */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20 backdrop-blur-[2px]">
+                   <span className="px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-semibold shadow-lg flex items-center gap-2">
+                     <ExternalLinkIcon className="w-4 h-4" /> View Gallery
+                   </span>
+                </div>
+
                 {/* Tech Badges on Image */}
                 <div className="absolute top-4 right-4 flex flex-col items-end gap-2">
                     {item.techBadges.map((badge) => (
@@ -48,9 +64,12 @@ const DashboardShowcase: React.FC = () => {
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-slate-400 text-sm leading-relaxed line-clamp-3">
                   {item.description}
                 </p>
+                <div className="mt-4 flex items-center gap-2 text-xs text-blue-400 font-medium">
+                   <span>{item.images.length} images available</span>
+                </div>
               </div>
             </div>
           ))}
