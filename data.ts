@@ -1,5 +1,5 @@
 
-import { Job, Profile, Project, SkillCategory, Education, Certification, Activity } from './types';
+import { Job, Profile, Project, SkillCategory, Education, Certification, Activity, ShowcaseItem } from './types';
 
 export const profile: Profile = {
   name: "Muhammad Haqimi Bin Harun",
@@ -170,6 +170,30 @@ export const projects: Project[] = [
     techStack: ["PHP", "MySQL", "Rasa AI", "JavaScript"],
     link: "https://publisher.uthm.edu.my/periodicals/index.php/aitcs", 
     repo: "https://github.com/haqimiharun15/nurdaya-craft-shop"
+  }
+];
+
+export const showcaseItems: ShowcaseItem[] = [
+  {
+    id: "s1",
+    title: "Grafana Monitoring Dashboard",
+    description: "A centralized dashboard visualizing system health, CPU/Memory usage, and request latency. Configured using Prometheus as the data source to ensure real-time observability of production environments.",
+    imageUrl: "https://placehold.co/800x450/1e293b/10b981?text=Grafana+Dashboard+Example",
+    techBadges: ["Grafana", "Prometheus", "Observability"]
+  },
+  {
+    id: "s2",
+    title: "GitLab CI/CD Pipeline",
+    description: "Automated deployment pipeline showcasing Build, Test, and Deploy stages. This workflow ensures zero-downtime deployments and consistent code quality checks before merging.",
+    imageUrl: "https://placehold.co/800x450/1e293b/3b82f6?text=GitLab+Pipeline+Workflow",
+    techBadges: ["GitLab CI", "DevOps", "Automation"]
+  },
+  {
+    id: "s3",
+    title: "Docker Container Architecture",
+    description: "Visualization of the containerized environment, isolating PHP application services, PostgreSQL databases, and NGINX web servers for consistent staging and production setups.",
+    imageUrl: "https://placehold.co/800x450/1e293b/0ea5e9?text=Docker+Container+Setup",
+    techBadges: ["Docker", "Containers", "Microservices"]
   }
 ];
 

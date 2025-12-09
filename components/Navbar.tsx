@@ -20,10 +20,11 @@ const Navbar: React.FC = () => {
           {profile.name.split(' ')[0]}<span className="text-emerald-500">.dev</span>
         </a>
 
-        <ul className="flex gap-6 sm:gap-8">
+        <ul className="flex gap-4 sm:gap-8 overflow-x-auto pb-1 sm:pb-0">
            <li><a href="#home" className="text-sm font-medium text-slate-400 hover:text-white hover:underline decoration-emerald-500 decoration-2 underline-offset-4 transition-all">Home</a></li>
            <li><a href="#resume" className="text-sm font-medium text-slate-400 hover:text-white hover:underline decoration-emerald-500 decoration-2 underline-offset-4 transition-all">Resume</a></li>
            <li><a href="#projects" className="text-sm font-medium text-slate-400 hover:text-white hover:underline decoration-emerald-500 decoration-2 underline-offset-4 transition-all">Projects</a></li>
+           <li><a href="#gallery" className="text-sm font-medium text-slate-400 hover:text-white hover:underline decoration-emerald-500 decoration-2 underline-offset-4 transition-all">Gallery</a></li>
            <li><a href="#contact" className="text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors">Contact</a></li>
         </ul>
       </div>

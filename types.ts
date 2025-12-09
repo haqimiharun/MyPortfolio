@@ -17,6 +17,14 @@ export interface Project {
   repo?: string;
 }
 
+export interface ShowcaseItem {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  techBadges: string[];
+}
+
 export interface SkillCategory {
   category: string;
   items: string[];
