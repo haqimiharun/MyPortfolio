@@ -1,5 +1,6 @@
+
 import { GoogleGenAI } from "@google/genai";
-import { profile, experience, projects, skills, education, certifications } from '../data';
+import { profile, experience, projects, skills, education, certifications, activities } from '../data';
 
 // Polyfill for process to avoid TypeScript errors in the browser build
 declare const process: any;
@@ -11,7 +12,8 @@ const contextData = JSON.stringify({
   education,
   certifications,
   projects,
-  skills
+  skills,
+  activities
 }, null, 2);
 
 const SYSTEM_INSTRUCTION = `

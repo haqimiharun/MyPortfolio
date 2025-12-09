@@ -38,6 +38,14 @@ export interface Certification {
   date: string;
 }
 
+export interface Activity {
+  id: string;
+  organization: string;
+  role: string;
+  period: string;
+  items: string[];
+}
+
 export interface Profile {
   name: string;
   title: string;

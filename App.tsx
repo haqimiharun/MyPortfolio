@@ -1,8 +1,10 @@
+
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 import ChatWidget from './components/ChatWidget';
 import Footer from './components/Footer';
 
@@ -14,6 +16,7 @@ const App: React.FC = () => {
         <Hero />
         <Resume />
         <Portfolio />
+        <Contact />
       </main>
       <Footer />
       <ChatWidget />
