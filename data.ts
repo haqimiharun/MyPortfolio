@@ -177,22 +177,34 @@ export const showcaseItems: ShowcaseItem[] = [
   {
     id: "s1",
     title: "Grafana Monitoring Dashboard",
-    description: "A centralized dashboard visualizing system health, CPU/Memory usage, and request latency. Configured using Prometheus as the data source to ensure real-time observability of production environments.",
-    imageUrl: "https://placehold.co/800x450/1e293b/10b981?text=Grafana+Dashboard+Example",
+    description: "A centralized dashboard visualizing system health, CPU/Memory usage, and request latency. Configured using Prometheus as the data source to ensure real-time observability of production environments. Includes alerts for high-latency endpoints and server resource exhaustion.",
+    images: [
+        "https://placehold.co/1200x800/1e293b/10b981?text=Main+Grafana+Dashboard",
+        "https://placehold.co/1200x800/1e293b/10b981?text=CPU+Usage+Metrics",
+        "https://placehold.co/1200x800/1e293b/10b981?text=Latency+Analysis"
+    ],
     techBadges: ["Grafana", "Prometheus", "Observability"]
   },
   {
     id: "s2",
     title: "GitLab CI/CD Pipeline",
-    description: "Automated deployment pipeline showcasing Build, Test, and Deploy stages. This workflow ensures zero-downtime deployments and consistent code quality checks before merging.",
-    imageUrl: "https://placehold.co/800x450/1e293b/3b82f6?text=GitLab+Pipeline+Workflow",
+    description: "Automated deployment pipeline showcasing Build, Test, and Deploy stages. This workflow ensures zero-downtime deployments and consistent code quality checks before merging. The pipeline includes separate jobs for unit testing, Docker image building, and deployment to staging/production servers.",
+    images: [
+        "https://placehold.co/1200x800/1e293b/3b82f6?text=Pipeline+Overview",
+        "https://placehold.co/1200x800/1e293b/3b82f6?text=Build+Stage+Logs",
+        "https://placehold.co/1200x800/1e293b/3b82f6?text=Deployment+Success"
+    ],
     techBadges: ["GitLab CI", "DevOps", "Automation"]
   },
   {
     id: "s3",
     title: "Docker Container Architecture",
-    description: "Visualization of the containerized environment, isolating PHP application services, PostgreSQL databases, and NGINX web servers for consistent staging and production setups.",
-    imageUrl: "https://placehold.co/800x450/1e293b/0ea5e9?text=Docker+Container+Setup",
+    description: "Visualization of the containerized environment, isolating PHP application services, PostgreSQL databases, and NGINX web servers. The setup uses Docker Compose for local development and Kubernetes manifests for production orchestration, ensuring consistency across all environments.",
+    images: [
+        "https://placehold.co/1200x800/1e293b/0ea5e9?text=Container+Architecture",
+        "https://placehold.co/1200x800/1e293b/0ea5e9?text=Docker+Compose+Config",
+        "https://placehold.co/1200x800/1e293b/0ea5e9?text=Service+Logs"
+    ],
     techBadges: ["Docker", "Containers", "Microservices"]
   }
 ];
