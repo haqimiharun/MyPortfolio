@@ -183,7 +183,8 @@ export const showcaseItems: ShowcaseItem[] = [
         "https://placehold.co/1200x800/1e293b/10b981?text=CPU+Usage+Metrics",
         "https://placehold.co/1200x800/1e293b/10b981?text=Latency+Analysis"
     ],
-    techBadges: ["Grafana", "Prometheus", "Observability"]
+    techBadges: ["Grafana", "Prometheus", "Observability"],
+    demoType: "monitoring"
   },
   {
     id: "s2",
@@ -194,7 +195,8 @@ export const showcaseItems: ShowcaseItem[] = [
         "https://placehold.co/1200x800/1e293b/3b82f6?text=Build+Stage+Logs",
         "https://placehold.co/1200x800/1e293b/3b82f6?text=Deployment+Success"
     ],
-    techBadges: ["GitLab CI", "DevOps", "Automation"]
+    techBadges: ["GitLab CI", "DevOps", "Automation"],
+    demoType: "pipeline"
   },
   {
     id: "s3",
@@ -205,7 +207,8 @@ export const showcaseItems: ShowcaseItem[] = [
         "https://placehold.co/1200x800/1e293b/0ea5e9?text=Docker+Compose+Config",
         "https://placehold.co/1200x800/1e293b/0ea5e9?text=Service+Logs"
     ],
-    techBadges: ["Docker", "Containers", "Microservices"]
+    techBadges: ["Docker", "Containers", "Microservices"],
+    demoType: "architecture"
   }
 ];
 
