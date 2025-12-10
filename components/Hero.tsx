@@ -22,9 +22,8 @@ const Hero: React.FC = () => {
 			<div className="z-10 max-w-5xl mx-auto px-6 flex flex-col items-center text-center space-y-8">
 				{/* Profile Image / Avatar */}
 				<div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-slate-800/80 shadow-2xl animate-fade-in-up mb-4 overflow-hidden group">
-					{/* Using UI Avatars as a placeholder. Replace src with your actual photo path (e.g., /me.jpg) */}
 					<img
-						src={`public/image/IMG_6326.JPG`}
+						src="./image/IMG_6326.JPG"
 						alt={profile.name}
 						className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
 					/>
