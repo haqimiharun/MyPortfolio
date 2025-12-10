@@ -206,7 +206,7 @@ export const projects: Project[] = [
 			"Documentation",
 			"Project Management",
 		],
-		link: "#",
+		link: "https://dailycuti.com/bercuti-dengan-anak-kecil-ini-beberapa-tips-yang-perlu-dilakukan-oleh-ibubapa/",
 		repo: "https://github.com/haqimiharun15/daily-cuti",
 	},
 	{
@@ -215,7 +215,7 @@ export const projects: Project[] = [
 		description:
 			"Developed a comprehensive e-commerce platform for a local craft business. Integrated AI chatbots and real-time inventory management. Published in AITCS Journal.",
 		techStack: ["PHP", "MySQL", "Rasa AI", "JavaScript"],
-		link: "https://publisher.uthm.edu.my/periodicals/index.php/aitcs",
+		link: "https://publisher.uthm.edu.my/periodicals/index.php/aitcs/article/view/16341",
 		repo: "https://github.com/haqimiharun15/nurdaya-craft-shop",
 	},
 ];
