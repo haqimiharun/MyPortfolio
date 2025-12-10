@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
 				<a
 					href="#home"
 					className="text-xl font-bold text-white tracking-tight hover:text-emerald-400 transition-colors">
-					Haqimi<span className="text-emerald-500">.dev</span>
+					HaqimiHarun<span className="text-emerald-500">.dev</span>
 				</a>
 
 				<ul className="flex gap-4 sm:gap-8 overflow-x-auto pb-1 sm:pb-0">
