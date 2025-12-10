@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { profile } from "../data";
+// import { profile } from "../data";
 
 const Navbar: React.FC = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
