@@ -17,12 +17,15 @@ export interface Project {
   repo?: string;
 }
 
+export type DemoType = 'monitoring' | 'pipeline' | 'architecture';
+
 export interface ShowcaseItem {
   id: string;
   title: string;
   description: string;
   images: string[];
   techBadges: string[];
+  demoType?: DemoType;
 }
 
 export interface SkillCategory {

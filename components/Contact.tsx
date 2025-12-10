@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
 
            <div className="mt-12 pt-8 border-t border-slate-800">
              <a 
-               href={`mailto:${profile.email}?subject=Inquiry from Haqimi's Portfolio`}
+               href={`mailto:${profile.email}?subject=Inquiry from Portfolio`}
                className="inline-flex items-center justify-center px-8 py-4 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-500 transition-all hover:shadow-lg hover:shadow-emerald-500/25 active:scale-95 w-full sm:w-auto"
              >
                Say Hello
