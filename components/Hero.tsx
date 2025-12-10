@@ -86,7 +86,7 @@ const Hero: React.FC = () => {
 			</div>
 
 			<div
-				className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-slate-500 hover:text-emerald-400 transition-colors cursor-pointer"
+				className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce text-slate-500 hover:text-emerald-400 transition-colors cursor-pointer"
 				onClick={() =>
 					document
 						.getElementById("resume")
